@@ -1,4 +1,4 @@
-(defproject clobal "0.1.0-SNAPSHOT"
+(defproject clobal "0.1.0"
   :description "Localized information about the world"
   :url "http://github.com/pelle/clobal"
   :license {:name "Eclipse Public License"
