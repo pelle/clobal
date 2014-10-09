@@ -4,7 +4,8 @@
 (def
  countries
  {:TL
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "aileu", :type :district, :code :TL-AL, :name "Aileu"}
     {:slug "ainaro", :type :district, :code :TL-AN, :name "Ainaro"}
     {:slug "baucau", :type :district, :code :TL-BA, :name "Baucau"}
@@ -31,7 +32,8 @@
    :name "Timor-Leste",
    :official_name "Democratic Republic of Timor-Leste"},
   :GD
-  {:regions
+  {:currency :XCD,
+   :regions
    [{:slug "saint-andrew",
      :type :parish,
      :code :GD-01,
@@ -66,7 +68,8 @@
    :numeric_code 308,
    :name "Grenada"},
   :SA
-  {:regions
+  {:currency :SAR,
+   :regions
    [{:slug "al-bahah", :type :province, :code :SA-11, :name "Al Bāhah"}
     {:slug "al-hudud-ash-shamaliyah",
      :type :province,
@@ -96,7 +99,8 @@
    :name "Saudi Arabia",
    :official_name "Kingdom of Saudi Arabia"},
   :LU
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "diekirch", :type :district, :code :LU-D, :name "Diekirch"}
     {:slug "grevenmacher",
      :type :district,
@@ -113,7 +117,8 @@
    :name "Luxembourg",
    :official_name "Grand Duchy of Luxembourg"},
   :ID
-  {:regions
+  {:currency :IDR,
+   :regions
    [{:slug "jawa",
      :type :geographical-unit,
      :code :ID-JW,
@@ -314,14 +319,16 @@
    :name "Indonesia",
    :official_name "Republic of Indonesia"},
   :PF
-  {:regions nil,
+  {:currency :XPF,
+   :regions nil,
    :slug "french-polynesia",
    :alpha_2_code :PF,
    :alpha_3_code :PYF,
    :numeric_code 258,
    :name "French Polynesia"},
   :TO
-  {:regions
+  {:currency :TOP,
+   :regions
    [{:slug "eua", :type :division, :code :TO-01, :name "'Eua"}
     {:slug "haapai", :type :division, :code :TO-02, :name "Ha'apai"}
     {:slug "niuas", :type :division, :code :TO-03, :name "Niuas"}
@@ -337,7 +344,8 @@
    :name "Tonga",
    :official_name "Kingdom of Tonga"},
   :CM
-  {:regions
+  {:currency :XAF,
+   :regions
    [{:slug "adamaoua", :type :province, :code :CM-AD, :name "Adamaoua"}
     {:slug "centre", :type :province, :code :CM-CE, :name "Centre"}
     {:slug "east", :type :province, :code :CM-ES, :name "East"}
@@ -364,14 +372,16 @@
    :name "Cameroon",
    :official_name "Republic of Cameroon"},
   :YT
-  {:regions nil,
+  {:currency :EUR,
+   :regions nil,
    :slug "mayotte",
    :alpha_2_code :YT,
    :alpha_3_code :MYT,
    :numeric_code 175,
    :name "Mayotte"},
   :PT
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "aveiro", :type :district, :code :PT-01, :name "Aveiro"}
     {:slug "beja", :type :district, :code :PT-02, :name "Beja"}
     {:slug "braga", :type :district, :code :PT-03, :name "Braga"}
@@ -417,7 +427,8 @@
    :name "Portugal",
    :official_name "Portuguese Republic"},
   :LK
-  {:regions
+  {:currency :LKR,
+   :regions
    [{:slug "basnahira-palata",
      :type :province,
      :code :LK-1,
@@ -586,7 +597,8 @@
    :name "Sri Lanka",
    :official_name "Democratic Socialist Republic of Sri Lanka"},
   :IR
-  {:regions
+  {:currency :IRR,
+   :regions
    [{:slug "ardabil", :type :province, :code :IR-03, :name "Ardabīl"}
     {:slug "azarbayjan-e-gharbi",
      :type :province,
@@ -663,7 +675,8 @@
    :name "Iran, Islamic Republic of",
    :official_name "Islamic Republic of Iran"},
   :KW
-  {:regions
+  {:currency :KWD,
+   :regions
    [{:slug "al-ahmadi",
      :type :governorate,
      :code :KW-AH,
@@ -695,7 +708,8 @@
    :name "Kuwait",
    :official_name "State of Kuwait"},
   :VU
-  {:regions
+  {:currency :VUV,
+   :regions
    [{:slug "malampa", :type :province, :code :VU-MAP, :name "Malampa"}
     {:slug "penama", :type :province, :code :VU-PAM, :name "Pénama"}
     {:slug "sanma", :type :province, :code :VU-SAM, :name "Sanma"}
@@ -709,7 +723,8 @@
    :name "Vanuatu",
    :official_name "Republic of Vanuatu"},
   :IL
-  {:regions
+  {:currency :ILS,
+   :regions
    [{:slug "hadarom", :type :district, :code :IL-D, :name "HaDarom"}
     {:slug "hamerkaz", :type :district, :code :IL-M, :name "HaMerkaz"}
     {:slug "hazafon", :type :district, :code :IL-Z, :name "HaZafon"}
@@ -726,7 +741,8 @@
    :name "Israel",
    :official_name "State of Israel"},
   :CL
-  {:regions
+  {:currency :CLP,
+   :regions
    [{:slug "aisen-del-general-carlos-ibanez-del-campo",
      :type :region,
      :code :CL-AI,
@@ -770,7 +786,8 @@
    :name "Chile",
    :official_name "Republic of Chile"},
   :QA
-  {:regions
+  {:currency :QAR,
+   :regions
    [{:slug "ad-dawhah",
      :type :municipality,
      :code :QA-DA,
@@ -806,14 +823,16 @@
    :name "Qatar",
    :official_name "State of Qatar"},
   :IO
-  {:regions nil,
+  {:currency :USD,
+   :regions nil,
    :slug "british-indian-ocean-territory",
    :alpha_2_code :IO,
    :alpha_3_code :IOT,
    :numeric_code 86,
    :name "British Indian Ocean Territory"},
   :SC
-  {:regions
+  {:currency :SCR,
+   :regions
    [{:slug "anse-aux-pins",
      :type :district,
      :code :SC-01,
@@ -909,7 +928,8 @@
    :name "Seychelles",
    :official_name "Republic of Seychelles"},
   :BE
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug
      "bruxelles-capitale-region-de-brussels-hoofdstedelijk-gewest",
      :type :region,
@@ -981,21 +1001,24 @@
    :name "Belgium",
    :official_name "Kingdom of Belgium"},
   :AQ
-  {:regions nil,
+  {:currency nil,
+   :regions nil,
    :slug "antarctica",
    :alpha_2_code :AQ,
    :alpha_3_code :ATA,
    :numeric_code 10,
    :name "Antarctica"},
   :VA
-  {:regions nil,
+  {:currency :EUR,
+   :regions nil,
    :slug "holy-see-vatican-city-state",
    :alpha_2_code :VA,
    :alpha_3_code :VAT,
    :numeric_code 336,
    :name "Holy See (Vatican City State)"},
   :GT
-  {:regions
+  {:currency :GTQ,
+   :regions
    [{:slug "alta-verapaz",
      :type :department,
      :code :GT-AV,
@@ -1070,14 +1093,16 @@
    :name "Guatemala",
    :official_name "Republic of Guatemala"},
   :GP
-  {:regions nil,
+  {:currency :EUR,
+   :regions nil,
    :slug "guadeloupe",
    :alpha_2_code :GP,
    :alpha_3_code :GLP,
    :numeric_code 312,
    :name "Guadeloupe"},
   :MC
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "la-condamine",
      :type :quarter,
      :code :MC-CO,
@@ -1141,7 +1166,8 @@
    :name "Monaco",
    :official_name "Principality of Monaco"},
   :SK
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "banskobystricky-kraj",
      :type :region,
      :code :SK-BC,
@@ -1181,7 +1207,8 @@
    :name "Slovakia",
    :official_name "Slovak Republic"},
   :SH
-  {:regions
+  {:currency :SHP,
+   :regions
    [{:slug "ascension",
      :type :geographical-entity,
      :code :SH-AC,
@@ -1200,7 +1227,8 @@
    :numeric_code 654,
    :name "Saint Helena, Ascension and Tristan da Cunha"},
   :IT
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "abruzzo", :type :region, :code :IT-65, :name "Abruzzo"}
     {:slug "basilicata",
      :type :region,
@@ -1793,7 +1821,8 @@
    :name "Italy",
    :official_name "Italian Republic"},
   :SG
-  {:regions
+  {:currency :SGD,
+   :regions
    [{:slug "central-singapore",
      :type :district,
      :code :SG-01,
@@ -1821,7 +1850,8 @@
    :name "Singapore",
    :official_name "Republic of Singapore"},
   :CY
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "ammochostos",
      :type :district,
      :code :CY-04,
@@ -1838,7 +1868,8 @@
    :name "Cyprus",
    :official_name "Republic of Cyprus"},
   :BJ
-  {:regions
+  {:currency :XOF,
+   :regions
    [{:slug "alibori", :type :department, :code :BJ-AL, :name "Alibori"}
     {:slug "atakora", :type :department, :code :BJ-AK, :name "Atakora"}
     {:slug "atlantique",
@@ -1867,7 +1898,8 @@
    :name "Benin",
    :official_name "Republic of Benin"},
   :GB
-  {:regions
+  {:currency :GBP,
+   :regions
    [{:slug "england", :type :country, :code :GB-ENG, :name "England"}
     {:slug "scotland", :type :country, :code :GB-SCT, :name "Scotland"}
     {:slug "wales", :type :country, :code :GB-WLS, :name "Wales"}
@@ -2803,7 +2835,8 @@
    :official_name
    "United Kingdom of Great Britain and Northern Ireland"},
   :PS
-  {:regions
+  {:currency nil,
+   :regions
    [{:slug "bethlehem",
      :type :governorate,
      :code :PS-BTH,
@@ -2854,7 +2887,8 @@
    :name "Palestine, State of",
    :official_name "the State of Palestine"},
   :HR
-  {:regions
+  {:currency :HRK,
+   :regions
    [{:slug "grad-zagreb",
      :type :city,
      :code :HR-21,
@@ -2946,7 +2980,8 @@
    :name "Croatia",
    :official_name "Republic of Croatia"},
   :DK
-  {:regions
+  {:currency :DKK,
+   :regions
    [{:slug "hovedstaden",
      :type :region,
      :code :DK-84,
@@ -2971,7 +3006,8 @@
    :name "Denmark",
    :official_name "Kingdom of Denmark"},
   :LA
-  {:regions
+  {:currency :LAK,
+   :regions
    [{:slug "vientiane",
      :type :prefecture,
      :code :LA-VT,
@@ -3032,7 +3068,8 @@
    :numeric_code 418,
    :name "Lao People's Democratic Republic"},
   :AR
-  {:regions
+  {:currency :ARS,
+   :regions
    [{:slug "ciudad-autonoma-de-buenos-aires",
      :type :city,
      :code :AR-C,
@@ -3090,7 +3127,8 @@
    :name "Argentina",
    :official_name "Argentine Republic"},
   :SZ
-  {:regions
+  {:currency :SZL,
+   :regions
    [{:slug "hhohho", :type :district, :code :SZ-HH, :name "Hhohho"}
     {:slug "lubombo", :type :district, :code :SZ-LU, :name "Lubombo"}
     {:slug "manzini", :type :district, :code :SZ-MA, :name "Manzini"}
@@ -3105,28 +3143,32 @@
    :name "Swaziland",
    :official_name "Kingdom of Swaziland"},
   :EH
-  {:regions nil,
+  {:currency :MAD,
+   :regions nil,
    :slug "western-sahara",
    :alpha_2_code :EH,
    :alpha_3_code :ESH,
    :numeric_code 732,
    :name "Western Sahara"},
   :PR
-  {:regions nil,
+  {:currency :USD,
+   :regions nil,
    :slug "puerto-rico",
    :alpha_2_code :PR,
    :alpha_3_code :PRI,
    :numeric_code 630,
    :name "Puerto Rico"},
   :CC
-  {:regions nil,
+  {:currency :AUD,
+   :regions nil,
    :slug "cocos-keeling-islands",
    :alpha_2_code :CC,
    :alpha_3_code :CCK,
    :numeric_code 166,
    :name "Cocos (Keeling) Islands"},
   :IQ
-  {:regions
+  {:currency :IQD,
+   :regions
    [{:slug "al-anbar",
      :type :governorate,
      :code :IQ-AN,
@@ -3185,7 +3227,8 @@
    :name "Iraq",
    :official_name "Republic of Iraq"},
   :SE
-  {:regions
+  {:currency :SEK,
+   :regions
    [{:slug "blekinge-laen",
      :type :county,
      :code :SE-K,
@@ -3277,14 +3320,16 @@
    :name "Sweden",
    :official_name "Kingdom of Sweden"},
   :BM
-  {:regions nil,
+  {:currency :BMD,
+   :regions nil,
    :slug "bermuda",
    :alpha_2_code :BM,
    :alpha_3_code :BMU,
    :numeric_code 60,
    :name "Bermuda"},
   :WS
-  {:regions
+  {:currency :WST,
+   :regions
    [{:slug "aana", :type :district, :code :WS-AA, :name "A'ana"}
     {:slug "aiga-i-le-tai",
      :type :district,
@@ -3327,7 +3372,8 @@
    :name "Samoa",
    :official_name "Independent State of Samoa"},
   :UZ
-  {:regions
+  {:currency :UZS,
+   :regions
    [{:slug "toshkent", :type :city, :code :UZ-TK, :name "Toshkent"}
     {:slug "andijon", :type :region, :code :UZ-AN, :name "Andijon"}
     {:slug "buxoro", :type :region, :code :UZ-BU, :name "Buxoro"}
@@ -3358,7 +3404,8 @@
    :name "Uzbekistan",
    :official_name "Republic of Uzbekistan"},
   :IN
-  {:regions
+  {:currency :INR,
+   :regions
    [{:slug "andhra-pradesh",
      :type :state,
      :code :IN-AP,
@@ -3455,7 +3502,8 @@
    :name "India",
    :official_name "Republic of India"},
   :DO
-  {:regions
+  {:currency :DOP,
+   :regions
    [{:slug "distrito-nacional-santo-domingo",
      :type :district,
      :code :DO-01,
@@ -3549,21 +3597,24 @@
    :numeric_code 214,
    :name "Dominican Republic"},
   :GF
-  {:regions nil,
+  {:currency :EUR,
+   :regions nil,
    :slug "french-guiana",
    :alpha_2_code :GF,
    :alpha_3_code :GUF,
    :numeric_code 254,
    :name "French Guiana"},
   :LC
-  {:regions nil,
+  {:currency :XCD,
+   :regions nil,
    :slug "saint-lucia",
    :alpha_2_code :LC,
    :alpha_3_code :LCA,
    :numeric_code 662,
    :name "Saint Lucia"},
   :BQ
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "bonaire",
      :type :special-municipality,
      :code :BQ-BO,
@@ -3583,7 +3634,8 @@
    :name "Bonaire, Sint Eustatius and Saba",
    :official_name "Bonaire, Sint Eustatius and Saba"},
   :GL
-  {:regions
+  {:currency :DKK,
+   :regions
    [{:slug "kommune-kujalleq",
      :type :municipality,
      :code :GL-KU,
@@ -3606,7 +3658,8 @@
    :numeric_code 304,
    :name "Greenland"},
   :ST
-  {:regions
+  {:currency :STD,
+   :regions
    [{:slug "principe",
      :type :municipality,
      :code :ST-P,
@@ -3622,7 +3675,8 @@
    :name "Sao Tome and Principe",
    :official_name "Democratic Republic of Sao Tome and Principe"},
   :SX
-  {:regions nil,
+  {:currency :ANG,
+   :regions nil,
    :slug "sint-maarten-dutch-part",
    :alpha_2_code :SX,
    :alpha_3_code :SXM,
@@ -3630,14 +3684,16 @@
    :name "Sint Maarten (Dutch part)",
    :official_name "Sint Maarten (Dutch part)"},
   :GG
-  {:regions [],
+  {:currency :GBP,
+   :regions [],
    :slug "guernsey",
    :alpha_2_code :GG,
    :alpha_3_code :GGY,
    :numeric_code 831,
    :name "Guernsey"},
   :BZ
-  {:regions
+  {:currency :BZD,
+   :regions
    [{:slug "belize", :type :district, :code :BZ-BZ, :name "Belize"}
     {:slug "cayo", :type :district, :code :BZ-CY, :name "Cayo"}
     {:slug "corozal", :type :district, :code :BZ-CZL, :name "Corozal"}
@@ -3656,7 +3712,8 @@
    :numeric_code 84,
    :name "Belize"},
   :TV
-  {:regions
+  {:currency :AUD,
+   :regions
    [{:slug "funafuti",
      :type :town-council,
      :code :TV-FUN,
@@ -3692,14 +3749,16 @@
    :numeric_code 798,
    :name "Tuvalu"},
   :AW
-  {:regions nil,
+  {:currency :AWG,
+   :regions nil,
    :slug "aruba",
    :alpha_2_code :AW,
    :alpha_3_code :ABW,
    :numeric_code 533,
    :name "Aruba"},
   :LR
-  {:regions
+  {:currency :LRD,
+   :regions
    [{:slug "bomi", :type :county, :code :LR-BM, :name "Bomi"}
     {:slug "bong", :type :county, :code :LR-BG, :name "Bong"}
     {:slug "grand-bassa",
@@ -3732,14 +3791,16 @@
    :name "Liberia",
    :official_name "Republic of Liberia"},
   :KY
-  {:regions nil,
+  {:currency :KYD,
+   :regions nil,
    :slug "cayman-islands",
    :alpha_2_code :KY,
    :alpha_3_code :CYM,
    :numeric_code 136,
    :name "Cayman Islands"},
   :UG
-  {:regions
+  {:currency :UGX,
+   :regions
    [{:slug "central",
      :type :geographical-region,
      :code :UG-C,
@@ -4163,7 +4224,8 @@
    :name "Uganda",
    :official_name "Republic of Uganda"},
   :AF
-  {:regions
+  {:currency nil,
+   :regions
    [{:slug "badakhshan",
      :type :province,
      :code :AF-BDS,
@@ -4229,7 +4291,8 @@
    :name "Afghanistan",
    :official_name "Islamic Republic of Afghanistan"},
   :AE
-  {:regions
+  {:currency :AED,
+   :regions
    [{:slug "abu-zaby-abu-dhabi",
      :type :emirate,
      :code :AE-AZ,
@@ -4258,7 +4321,8 @@
    :numeric_code 784,
    :name "United Arab Emirates"},
   :JO
-  {:regions
+  {:currency :JOD,
+   :regions
    [{:slug "ajlun", :type :governorate, :code :JO-AJ, :name "‘Ajlūn"}
     {:slug "al-aqabah",
      :type :governorate,
@@ -4302,7 +4366,8 @@
    :name "Jordan",
    :official_name "Hashemite Kingdom of Jordan"},
   :NI
-  {:regions
+  {:currency :NIO,
+   :regions
    [{:slug "boaco", :type :department, :code :NI-BO, :name "Boaco"}
     {:slug "carazo", :type :department, :code :NI-CA, :name "Carazo"}
     {:slug "chinandega",
@@ -4351,7 +4416,8 @@
    :name "Nicaragua",
    :official_name "Republic of Nicaragua"},
   :SM
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "acquaviva",
      :type :municipalities,
      :code :SM-01,
@@ -4395,14 +4461,16 @@
    :name "San Marino",
    :official_name "Republic of San Marino"},
   :FO
-  {:regions nil,
+  {:currency :DKK,
+   :regions nil,
    :slug "faroe-islands",
    :alpha_2_code :FO,
    :alpha_3_code :FRO,
    :numeric_code 234,
    :name "Faroe Islands"},
   :GQ
-  {:regions
+  {:currency :XAF,
+   :regions
    [{:slug "region-continental",
      :type :region,
      :code :GQ-C,
@@ -4453,7 +4521,8 @@
    :name "Equatorial Guinea",
    :official_name "Republic of Equatorial Guinea"},
   :KP
-  {:regions
+  {:currency :KPW,
+   :regions
    [{:slug "pyongyang",
      :type :capital-city,
      :code :KP-01,
@@ -4505,7 +4574,8 @@
    :name "Korea, Democratic People's Republic of",
    :official_name "Democratic People's Republic of Korea"},
   :CO
-  {:regions
+  {:currency :COP,
+   :regions
    [{:slug "distrito-capital-de-bogota",
      :type :capital-district,
      :code :CO-DC,
@@ -4609,7 +4679,8 @@
    :name "Colombia",
    :official_name "Republic of Colombia"},
   :MG
-  {:regions
+  {:currency :MGA,
+   :regions
    [{:slug "antananarivo",
      :type :autonomous-province,
      :code :MG-T,
@@ -4641,7 +4712,8 @@
    :name "Madagascar",
    :official_name "Republic of Madagascar"},
   :TZ
-  {:regions
+  {:currency :TZS,
+   :regions
    [{:slug "arusha", :type :region, :code :TZ-01, :name "Arusha"}
     {:slug "dar-es-salaam",
      :type :region,
@@ -4696,7 +4768,8 @@
    :name "Tanzania, United Republic of",
    :official_name "United Republic of Tanzania"},
   :SV
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "ahuachapan",
      :type :department,
      :code :SV-AH,
@@ -4751,14 +4824,16 @@
    :name "El Salvador",
    :official_name "Republic of El Salvador"},
   :MF
-  {:regions [],
+  {:currency :EUR,
+   :regions [],
    :slug "saint-martin-french-part",
    :alpha_2_code :MF,
    :alpha_3_code :MAF,
    :numeric_code 663,
    :name "Saint Martin (French part)"},
   :EC
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "azuay", :type :province, :code :EC-A, :name "Azuay"}
     {:slug "bolivar", :type :province, :code :EC-B, :name "Bolívar"}
     {:slug "canar", :type :province, :code :EC-F, :name "Cañar"}
@@ -4820,21 +4895,24 @@
    :name "Ecuador",
    :official_name "Republic of Ecuador"},
   :CX
-  {:regions nil,
+  {:currency :AUD,
+   :regions nil,
    :slug "christmas-island",
    :alpha_2_code :CX,
    :alpha_3_code :CXR,
    :numeric_code 162,
    :name "Christmas Island"},
   :HM
-  {:regions nil,
+  {:currency :AUD,
+   :regions nil,
    :slug "heard-island-and-mcdonald-islands",
    :alpha_2_code :HM,
    :alpha_3_code :HMD,
    :numeric_code 334,
    :name "Heard Island and McDonald Islands"},
   :KH
-  {:regions
+  {:currency :KHR,
+   :regions
    [{:slug "krong-kaeb",
      :type :autonomous-municipality,
      :code :KH-23,
@@ -4923,7 +5001,8 @@
    :name "Cambodia",
    :official_name "Kingdom of Cambodia"},
   :CV
-  {:regions
+  {:currency :CVE,
+   :regions
    [{:slug "ilhas-de-barlavento",
      :type :geographical-region,
      :code :CV-B,
@@ -5049,7 +5128,8 @@
    :name "Cape Verde",
    :official_name "Republic of Cape Verde"},
   :ZW
-  {:regions
+  {:currency :ZWL,
+   :regions
    [{:slug "bulawayo", :type :city, :code :ZW-BU, :name "Bulawayo"}
     {:slug "harare", :type :city, :code :ZW-HA, :name "Harare"}
     {:slug "manicaland",
@@ -5088,14 +5168,16 @@
    :name "Zimbabwe",
    :official_name "Republic of Zimbabwe"},
   :GI
-  {:regions nil,
+  {:currency :GIP,
+   :regions nil,
    :slug "gibraltar",
    :alpha_2_code :GI,
    :alpha_3_code :GIB,
    :numeric_code 292,
    :name "Gibraltar"},
   :MU
-  {:regions
+  {:currency :MUR,
+   :regions
    [{:slug "beau-bassin-rose-hill",
      :type :city,
      :code :MU-BR,
@@ -5156,7 +5238,8 @@
    :name "Mauritius",
    :official_name "Republic of Mauritius"},
   :HN
-  {:regions
+  {:currency :HNL,
+   :regions
    [{:slug "atlantida",
      :type :department,
      :code :HN-AT,
@@ -5212,7 +5295,8 @@
    :name "Honduras",
    :official_name "Republic of Honduras"},
   :AL
-  {:regions
+  {:currency :ALL,
+   :regions
    [{:slug "berat", :type :county, :code :AL-01, :name "Berat"}
     {:slug "diber", :type :county, :code :AL-09, :name "Dibër"}
     {:slug "durres", :type :county, :code :AL-02, :name "Durrës"}
@@ -5415,7 +5499,8 @@
    :name "Albania",
    :official_name "Republic of Albania"},
   :MV
-  {:regions
+  {:currency :MVR,
+   :regions
    [{:slug "male", :type :city, :code :MV-MLE, :name "Male"}
     {:slug "south", :type :province, :code :MV-SU, :name "South"}
     {:slug "upper-south",
@@ -5543,7 +5628,8 @@
    :name "Maldives",
    :official_name "Republic of Maldives"},
   :LY
-  {:regions
+  {:currency :LYD,
+   :regions
    [{:slug "al-butnan",
      :type :popularates,
      :code :LY-BU,
@@ -5625,21 +5711,24 @@
    :name "Libya",
    :official_name "Libya"},
   :BL
-  {:regions [],
+  {:currency :EUR,
+   :regions [],
    :slug "saint-barthelemy",
    :alpha_2_code :BL,
    :alpha_3_code :BLM,
    :numeric_code 652,
    :name "Saint Barthélemy"},
   :AI
-  {:regions nil,
+  {:currency :XCD,
+   :regions nil,
    :slug "anguilla",
    :alpha_2_code :AI,
    :alpha_3_code :AIA,
    :numeric_code 660,
    :name "Anguilla"},
   :OM
-  {:regions
+  {:currency :OMR,
+   :regions
    [{:slug "ad-dakhiliya",
      :type :region,
      :code :OM-DA,
@@ -5674,7 +5763,8 @@
    :name "Oman",
    :official_name "Sultanate of Oman"},
   :HT
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "artibonite",
      :type :department,
      :code :HT-AR,
@@ -5706,14 +5796,16 @@
    :name "Haiti",
    :official_name "Republic of Haiti"},
   :PM
-  {:regions nil,
+  {:currency :EUR,
+   :regions nil,
    :slug "saint-pierre-and-miquelon",
    :alpha_2_code :PM,
    :alpha_3_code :SPM,
    :numeric_code 666,
    :name "Saint Pierre and Miquelon"},
   :PE
-  {:regions
+  {:currency :PEN,
+   :regions
    [{:slug "el-callao",
      :type :constitutional-province,
      :code :PE-CAL,
@@ -5774,7 +5866,8 @@
    :name "Peru",
    :official_name "Republic of Peru"},
   :BN
-  {:regions
+  {:currency :BND,
+   :regions
    [{:slug "belait", :type :district, :code :BN-BE, :name "Belait"}
     {:slug "brunei-muara",
      :type :district,
@@ -5791,14 +5884,16 @@
    :numeric_code 96,
    :name "Brunei Darussalam"},
   :TF
-  {:regions nil,
+  {:currency :EUR,
+   :regions nil,
    :slug "french-southern-territories",
    :alpha_2_code :TF,
    :alpha_3_code :ATF,
    :numeric_code 260,
    :name "French Southern Territories"},
   :CA
-  {:regions
+  {:currency :CAD,
+   :regions
    [{:slug "alberta", :type :province, :code :CA-AB, :name "Alberta"}
     {:slug "british-columbia",
      :type :province,
@@ -5842,7 +5937,8 @@
    :numeric_code 124,
    :name "Canada"},
   :CU
-  {:regions
+  {:currency :CUP,
+   :regions
    [{:slug "camagueey",
      :type :province,
      :code :CU-09,
@@ -5901,7 +5997,8 @@
    :name "Cuba",
    :official_name "Republic of Cuba"},
   :MA
-  {:regions
+  {:currency :MAD,
+   :regions
    [{:slug "chaouia-ouardigha",
      :type :economic-region,
      :code :MA-09,
@@ -6288,7 +6385,8 @@
    :name "Morocco",
    :official_name "Kingdom of Morocco"},
   :PY
-  {:regions
+  {:currency :PYG,
+   :regions
    [{:slug "asuncion",
      :type :capital-district,
      :code :PY-ASU,
@@ -6353,7 +6451,8 @@
    :name "Paraguay",
    :official_name "Republic of Paraguay"},
   :IS
-  {:regions
+  {:currency :ISK,
+   :regions
    [{:slug "austurland",
      :type :region,
      :code :IS-7,
@@ -6388,7 +6487,8 @@
    :name "Iceland",
    :official_name "Republic of Iceland"},
   :KN
-  {:regions
+  {:currency :XCD,
+   :regions
    [{:slug "saint-kitts",
      :type :state,
      :code :KN-K,
@@ -6470,14 +6570,16 @@
    :numeric_code 659,
    :name "Saint Kitts and Nevis"},
   :PN
-  {:regions nil,
+  {:currency :NZD,
+   :regions nil,
    :slug "pitcairn",
    :alpha_2_code :PN,
    :alpha_3_code :PCN,
    :numeric_code 612,
    :name "Pitcairn"},
   :LB
-  {:regions
+  {:currency :LBP,
+   :regions
    [{:slug "aakkar", :type :governorate, :code :LB-AK, :name "Aakkâr"}
     {:slug "baalbek-hermel",
      :type :governorate,
@@ -6511,7 +6613,8 @@
    :name "Lebanon",
    :official_name "Lebanese Republic"},
   :ME
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "andrijevica",
      :type :municipality,
      :code :ME-01,
@@ -6573,7 +6676,8 @@
    :name "Montenegro",
    :official_name "Montenegro"},
   :DJ
-  {:regions
+  {:currency :DJF,
+   :regions
    [{:slug "ali-sabieh",
      :type :region,
      :code :DJ-AS,
@@ -6590,7 +6694,8 @@
    :name "Djibouti",
    :official_name "Republic of Djibouti"},
   :KE
-  {:regions
+  {:currency :KES,
+   :regions
    [{:slug "nairobi-municipality",
      :type :province,
      :code :KE-110,
@@ -6617,7 +6722,8 @@
    :name "Kenya",
    :official_name "Republic of Kenya"},
   :LV
-  {:regions
+  {:currency :LVL,
+   :regions
    [{:slug "aglonas-novads",
      :type :municipality,
      :code :LV-001,
@@ -7098,7 +7204,8 @@
    :name "Latvia",
    :official_name "Republic of Latvia"},
   :SI
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "ajdovscina",
      :type :municipality,
      :code :SI-001,
@@ -7844,7 +7951,8 @@
    :name "Slovenia",
    :official_name "Republic of Slovenia"},
   :MD
-  {:regions
+  {:currency :MDL,
+   :regions
    [{:slug "gagauzia-unitatea-teritoriala-autonoma",
      :type :autonomous-territorial-unit,
      :code :MD-GA,
@@ -7917,7 +8025,8 @@
    :name "Moldova, Republic of",
    :official_name "Republic of Moldova"},
   :AU
-  {:regions
+  {:currency :AUD,
+   :regions
    [{:slug "new-south-wales",
      :type :state,
      :code :AU-NSW,
@@ -7950,7 +8059,8 @@
    :numeric_code 36,
    :name "Australia"},
   :RO
-  {:regions
+  {:currency :RON,
+   :regions
    [{:slug "alba", :type :department, :code :RO-AB, :name "Alba"}
     {:slug "arad", :type :department, :code :RO-AR, :name "Arad"}
     {:slug "arges", :type :department, :code :RO-AG, :name "Argeș"}
@@ -8041,7 +8151,8 @@
    :numeric_code 642,
    :name "Romania"},
   :SO
-  {:regions
+  {:currency :SOS,
+   :regions
    [{:slug "awdal", :type :region, :code :SO-AW, :name "Awdal"}
     {:slug "bakool", :type :region, :code :SO-BK, :name "Bakool"}
     {:slug "banaadir", :type :region, :code :SO-BN, :name "Banaadir"}
@@ -8082,7 +8193,8 @@
    :name "Somalia",
    :official_name "Federal Republic of Somalia"},
   :KI
-  {:regions
+  {:currency :AUD,
+   :regions
    [{:slug "gilbert-islands",
      :type :island-group,
      :code :KI-G,
@@ -8102,7 +8214,8 @@
    :name "Kiribati",
    :official_name "Republic of Kiribati"},
   :BO
-  {:regions
+  {:currency :BOB,
+   :regions
    [{:slug "chuquisaca",
      :type :department,
      :code :BO-H,
@@ -8129,7 +8242,8 @@
    :name "Bolivia, Plurinational State of",
    :official_name "Plurinational State of Bolivia"},
   :AD
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "andorra-la-vella",
      :type :parish,
      :code :AD-07,
@@ -8156,7 +8270,8 @@
    :name "Andorra",
    :official_name "Principality of Andorra"},
   :VE
-  {:regions
+  {:currency :VEF,
+   :regions
    [{:slug "dependencias-federales",
      :type :federal-dependency,
      :code :VE-W,
@@ -8202,7 +8317,8 @@
    :name "Venezuela, Bolivarian Republic of",
    :official_name "Bolivarian Republic of Venezuela"},
   :MO
-  {:regions [],
+  {:currency :MOP,
+   :regions [],
    :slug "macao",
    :alpha_2_code :MO,
    :alpha_3_code :MAC,
@@ -8210,7 +8326,8 @@
    :name "Macao",
    :official_name "Macao Special Administrative Region of China"},
   :VN
-  {:regions
+  {:currency :VND,
+   :regions
    [{:slug "an-giang", :type :province, :code :VN-44, :name "An Giang"}
     {:slug "ba-ria-vung-tau",
      :type :province,
@@ -8378,7 +8495,8 @@
    :name "Viet Nam",
    :official_name "Socialist Republic of Viet Nam"},
   :CF
-  {:regions
+  {:currency :XAF,
+   :regions
    [{:slug "bangui", :type :commune, :code :CF-BGF, :name "Bangui"}
     {:slug "bamingui-bangoran",
      :type :prefecture,
@@ -8435,7 +8553,8 @@
    :numeric_code 140,
    :name "Central African Republic"},
   :MX
-  {:regions
+  {:currency :MXN,
+   :regions
    [{:slug "distrito-federal",
      :type :federal-district,
      :code :MX-DIF,
@@ -8505,7 +8624,8 @@
    :name "Mexico",
    :official_name "United Mexican States"},
   :CN
-  {:regions
+  {:currency :CNY,
+   :regions
    [{:slug "beijing",
      :type :municipality,
      :code :CN-11,
@@ -8586,7 +8706,8 @@
    :name "China",
    :official_name "People's Republic of China"},
   :BA
-  {:regions
+  {:currency :BAM,
+   :regions
    [{:slug "federacija-bosne-i-hercegovine",
      :type :entity,
      :code :BA-BIH,
@@ -8656,7 +8777,8 @@
    :name "Bosnia and Herzegovina",
    :official_name "Republic of Bosnia and Herzegovina"},
   :VG
-  {:regions nil,
+  {:currency :USD,
+   :regions nil,
    :slug "virgin-islands-british",
    :alpha_2_code :VG,
    :alpha_3_code :VGB,
@@ -8664,7 +8786,8 @@
    :name "Virgin Islands, British",
    :official_name "British Virgin Islands"},
   :NR
-  {:regions
+  {:currency :AUD,
+   :regions
    [{:slug "aiwo", :type :district, :code :NR-01, :name "Aiwo"}
     {:slug "anabar", :type :district, :code :NR-02, :name "Anabar"}
     {:slug "anetan", :type :district, :code :NR-03, :name "Anetan"}
@@ -8689,7 +8812,8 @@
    :name "Nauru",
    :official_name "Republic of Nauru"},
   :LS
-  {:regions
+  {:currency :ZAR,
+   :regions
    [{:slug "berea", :type :district, :code :LS-D, :name "Berea"}
     {:slug "butha-buthe",
      :type :district,
@@ -8722,7 +8846,8 @@
    :name "Lesotho",
    :official_name "Kingdom of Lesotho"},
   :RS
-  {:regions
+  {:currency :RSD,
+   :regions
    [{:slug "beograd", :type :city, :code :RS-00, :name "Beograd"}
     {:slug "kosovo-metohija",
      :type :autonomous-province,
@@ -8867,7 +8992,8 @@
    :name "Serbia",
    :official_name "Republic of Serbia"},
   :BI
-  {:regions
+  {:currency :BIF,
+   :regions
    [{:slug "bubanza", :type :province, :code :BI-BB, :name "Bubanza"}
     {:slug "bujumbura-mairie",
      :type :province,
@@ -8897,7 +9023,8 @@
    :name "Burundi",
    :official_name "Republic of Burundi"},
   :VC
-  {:regions
+  {:currency :XCD,
+   :regions
    [{:slug "charlotte", :type :parish, :code :VC-01, :name "Charlotte"}
     {:slug "grenadines",
      :type :parish,
@@ -8925,7 +9052,8 @@
    :numeric_code 670,
    :name "Saint Vincent and the Grenadines"},
   :SR
-  {:regions
+  {:currency :SRD,
+   :regions
    [{:slug "brokopondo",
      :type :district,
      :code :SR-BR,
@@ -8961,7 +9089,8 @@
    :name "Suriname",
    :official_name "Republic of Suriname"},
   :RU
-  {:regions
+  {:currency :RUB,
+   :regions
    [{:slug "adygeya-respublika",
      :type :republic,
      :code :RU-AD,
@@ -9300,14 +9429,16 @@
    :numeric_code 643,
    :name "Russian Federation"},
   :CK
-  {:regions nil,
+  {:currency :NZD,
+   :regions nil,
    :slug "cook-islands",
    :alpha_2_code :CK,
    :alpha_3_code :COK,
    :numeric_code 184,
    :name "Cook Islands"},
   :MK
-  {:regions
+  {:currency :MKD,
+   :regions
    [{:slug "aerodrom",
      :type :municipality,
      :code :MK-01,
@@ -9573,7 +9704,8 @@
    :name "Macedonia, Republic of",
    :official_name "The Former Yugoslav Republic of Macedonia"},
   :CI
-  {:regions
+  {:currency :XOF,
+   :regions
    [{:slug "18-montagnes-region-des",
      :type :region,
      :code :CI-06,
@@ -9657,14 +9789,16 @@
    :name "Côte d'Ivoire",
    :official_name "Republic of Côte d'Ivoire"},
   :WF
-  {:regions nil,
+  {:currency :XPF,
+   :regions nil,
    :slug "wallis-and-futuna",
    :alpha_2_code :WF,
    :alpha_3_code :WLF,
    :numeric_code 876,
    :name "Wallis and Futuna"},
   :NL
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "drenthe", :type :province, :code :NL-DR, :name "Drenthe"}
     {:slug "flevoland",
      :type :province,
@@ -9726,7 +9860,8 @@
    :name "Netherlands",
    :official_name "Kingdom of the Netherlands"},
   :BB
-  {:regions
+  {:currency :BBD,
+   :regions
    [{:slug "christ-church",
      :type :parish,
      :code :BB-01,
@@ -9777,7 +9912,8 @@
    :numeric_code 52,
    :name "Barbados"},
   :FJ
-  {:regions
+  {:currency :FJD,
+   :regions
    [{:slug "central", :type :division, :code :FJ-C, :name "Central"}
     {:slug "eastern", :type :division, :code :FJ-E, :name "Eastern"}
     {:slug "northern", :type :division, :code :FJ-N, :name "Northern"}
@@ -9790,7 +9926,8 @@
    :name "Fiji",
    :official_name "Republic of Fiji"},
   :TH
-  {:regions
+  {:currency :THB,
+   :regions
    [{:slug "krung-thep-maha-nakhon-bangkok",
      :type :municipality,
      :code :TH-10,
@@ -10019,7 +10156,8 @@
    :name "Thailand",
    :official_name "Kingdom of Thailand"},
   :US
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "alabama", :type :state, :code :US-AL, :name "Alabama"}
     {:slug "alaska", :type :state, :code :US-AK, :name "Alaska"}
     {:slug "arizona", :type :state, :code :US-AZ, :name "Arizona"}
@@ -10147,14 +10285,16 @@
    :name "United States",
    :official_name "United States of America"},
   :GU
-  {:regions nil,
+  {:currency :USD,
+   :regions nil,
    :slug "guam",
    :alpha_2_code :GU,
    :alpha_3_code :GUM,
    :numeric_code 316,
    :name "Guam"},
   :ZM
-  {:regions
+  {:currency :ZMW,
+   :regions
    [{:slug "central", :type :province, :code :ZM-02, :name "Central"}
     {:slug "copperbelt",
      :type :province,
@@ -10180,7 +10320,8 @@
    :name "Zambia",
    :official_name "Republic of Zambia"},
   :SN
-  {:regions
+  {:currency :XOF,
+   :regions
    [{:slug "dakar", :type :region, :code :SN-DK, :name "Dakar"}
     {:slug "diourbel", :type :region, :code :SN-DB, :name "Diourbel"}
     {:slug "fatick", :type :region, :code :SN-FK, :name "Fatick"}
@@ -10211,7 +10352,8 @@
    :name "Senegal",
    :official_name "Republic of Senegal"},
   :JP
-  {:regions
+  {:currency :JPY,
+   :regions
    [{:slug "aichi", :type :prefecture, :code :JP-23, :name "Aichi"}
     {:slug "akita", :type :prefecture, :code :JP-05, :name "Akita"}
     {:slug "aomori", :type :prefecture, :code :JP-02, :name "Aomori"}
@@ -10310,7 +10452,8 @@
    :numeric_code 392,
    :name "Japan"},
   :BF
-  {:regions
+  {:currency :XOF,
+   :regions
    [{:slug "boucle-du-mouhoun",
      :type :region,
      :code :BF-01,
@@ -10576,7 +10719,8 @@
    :numeric_code 854,
    :name "Burkina Faso"},
   :TD
-  {:regions
+  {:currency :XAF,
+   :regions
    [{:slug "al-bathah",
      :type :region,
      :code :TD-BA,
@@ -10642,7 +10786,8 @@
    :name "Chad",
    :official_name "Republic of Chad"},
   :SS
-  {:regions
+  {:currency :SSP,
+   :regions
    [{:slug "central-equatoria",
      :type :state,
      :code :SS-EC,
@@ -10678,7 +10823,8 @@
    :name "South Sudan",
    :official_name "Republic of South Sudan"},
   :KM
-  {:regions
+  {:currency :KMF,
+   :regions
    [{:slug "andjouan-anjwan",
      :type :island,
      :code :KM-A,
@@ -10698,7 +10844,8 @@
    :name "Comoros",
    :official_name "Union of the Comoros"},
   :GW
-  {:regions
+  {:currency :XOF,
+   :regions
    [{:slug "bissau",
      :type :autonomous-sector,
      :code :GW-BS,
@@ -10753,7 +10900,8 @@
    :name "Guinea-Bissau",
    :official_name "Republic of Guinea-Bissau"},
   :ER
-  {:regions
+  {:currency :ERN,
+   :regions
    [{:slug "al-awsat", :type :province, :code :ER-MA, :name "Al Awsaţ"}
     {:slug "al-janubi",
      :type :province,
@@ -10779,14 +10927,16 @@
    :name "Eritrea",
    :official_name "the State of Eritrea"},
   :RE
-  {:regions nil,
+  {:currency :EUR,
+   :regions nil,
    :slug "reunion",
    :alpha_2_code :RE,
    :alpha_3_code :REU,
    :numeric_code 638,
    :name "Réunion"},
   :NG
-  {:regions
+  {:currency :NGN,
+   :regions
    [{:slug "abuja-capital-territory",
      :type :capital-territory,
      :code :NG-FC,
@@ -10837,14 +10987,16 @@
    :name "Nigeria",
    :official_name "Federal Republic of Nigeria"},
   :JE
-  {:regions [],
+  {:currency :GBP,
+   :regions [],
    :slug "jersey",
    :alpha_2_code :JE,
    :alpha_3_code :JEY,
    :numeric_code 832,
    :name "Jersey"},
   :GM
-  {:regions
+  {:currency :GMD,
+   :regions
    [{:slug "lower-river",
      :type :division,
      :code :GM-L,
@@ -10870,14 +11022,16 @@
    :name "Gambia",
    :official_name "Republic of the Gambia"},
   :NF
-  {:regions nil,
+  {:currency :AUD,
+   :regions nil,
    :slug "norfolk-island",
    :alpha_2_code :NF,
    :alpha_3_code :NFK,
    :numeric_code 574,
    :name "Norfolk Island"},
   :BR
-  {:regions
+  {:currency :BRL,
+   :regions
    [{:slug "acre", :type :state, :code :BR-AC, :name "Acre"}
     {:slug "alagoas", :type :state, :code :BR-AL, :name "Alagoas"}
     {:slug "amazonas", :type :state, :code :BR-AM, :name "Amazonas"}
@@ -10946,7 +11100,8 @@
    :name "Brazil",
    :official_name "Federative Republic of Brazil"},
   :BT
-  {:regions
+  {:currency :INR,
+   :regions
    [{:slug "bumthang", :type :district, :code :BT-33, :name "Bumthang"}
     {:slug "chhukha", :type :district, :code :BT-12, :name "Chhukha"}
     {:slug "dagana", :type :district, :code :BT-22, :name "Dagana"}
@@ -10992,7 +11147,8 @@
    :name "Bhutan",
    :official_name "Kingdom of Bhutan"},
   :HK
-  {:regions nil,
+  {:currency :HKD,
+   :regions nil,
    :slug "hong-kong",
    :alpha_2_code :HK,
    :alpha_3_code :HKG,
@@ -11000,7 +11156,8 @@
    :name "Hong Kong",
    :official_name "Hong Kong Special Administrative Region of China"},
   :JM
-  {:regions
+  {:currency :JMD,
+   :regions
    [{:slug "clarendon", :type :parish, :code :JM-13, :name "Clarendon"}
     {:slug "hanover", :type :parish, :code :JM-09, :name "Hanover"}
     {:slug "kingston", :type :parish, :code :JM-01, :name "Kingston"}
@@ -11045,7 +11202,8 @@
    :numeric_code 388,
    :name "Jamaica"},
   :UY
-  {:regions
+  {:currency :UYU,
+   :regions
    [{:slug "artigas", :type :department, :code :UY-AR, :name "Artigas"}
     {:slug "canelones",
      :type :department,
@@ -11102,14 +11260,16 @@
    :name "Uruguay",
    :official_name "Eastern Republic of Uruguay"},
   :GS
-  {:regions nil,
+  {:currency nil,
+   :regions nil,
    :slug "south-georgia-and-the-south-sandwich-islands",
    :alpha_2_code :GS,
    :alpha_3_code :SGS,
    :numeric_code 239,
    :name "South Georgia and the South Sandwich Islands"},
   :BW
-  {:regions
+  {:currency :BWP,
+   :regions
    [{:slug "central", :type :district, :code :BW-CE, :name "Central"}
     {:slug "ghanzi", :type :district, :code :BW-GH, :name "Ghanzi"}
     {:slug "kgalagadi",
@@ -11141,7 +11301,8 @@
    :name "Botswana",
    :official_name "Republic of Botswana"},
   :EE
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "harjumaa", :type :county, :code :EE-37, :name "Harjumaa"}
     {:slug "hiiumaa", :type :county, :code :EE-39, :name "Hiiumaa"}
     {:slug "ida-virumaa",
@@ -11173,7 +11334,8 @@
    :name "Estonia",
    :official_name "Republic of Estonia"},
   :CR
-  {:regions
+  {:currency :CRC,
+   :regions
    [{:slug "alajuela", :type :province, :code :CR-A, :name "Alajuela"}
     {:slug "cartago", :type :province, :code :CR-C, :name "Cartago"}
     {:slug "guanacaste",
@@ -11197,7 +11359,8 @@
    :name "Costa Rica",
    :official_name "Republic of Costa Rica"},
   :MN
-  {:regions
+  {:currency :MNT,
+   :regions
    [{:slug "arhangay",
      :type :province,
      :code :MN-073,
@@ -11268,7 +11431,8 @@
    :numeric_code 496,
    :name "Mongolia"},
   :TR
-  {:regions
+  {:currency :TRY,
+   :regions
    [{:slug "adana", :type :province, :code :TR-01, :name "Adana"}
     {:slug "adiyaman", :type :province, :code :TR-02, :name "Adıyaman"}
     {:slug "afyonkarahisar",
@@ -11396,14 +11560,16 @@
    :name "Turkey",
    :official_name "Republic of Turkey"},
   :FK
-  {:regions nil,
+  {:currency :FKP,
+   :regions nil,
    :slug "falkland-islands-malvinas",
    :alpha_2_code :FK,
    :alpha_3_code :FLK,
    :numeric_code 238,
    :name "Falkland Islands (Malvinas)"},
   :LT
-  {:regions
+  {:currency :LTL,
+   :regions
    [{:slug "alytaus-apskritis",
      :type :county,
      :code :LT-AL,
@@ -11451,7 +11617,8 @@
    :name "Lithuania",
    :official_name "Republic of Lithuania"},
   :TM
-  {:regions
+  {:currency :TMT,
+   :regions
    [{:slug "ahal", :type :region, :code :TM-A, :name "Ahal"}
     {:slug "balkan", :type :region, :code :TM-B, :name "Balkan"}
     {:slug "dasoguz", :type :region, :code :TM-D, :name "Daşoguz"}
@@ -11464,14 +11631,16 @@
    :numeric_code 795,
    :name "Turkmenistan"},
   :NC
-  {:regions nil,
+  {:currency :XPF,
+   :regions nil,
    :slug "new-caledonia",
    :alpha_2_code :NC,
    :alpha_3_code :NCL,
    :numeric_code 540,
    :name "New Caledonia"},
   :IE
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "connacht", :type :province, :code :IE-C, :name "Connacht"}
     {:slug "leinster", :type :province, :code :IE-L, :name "Leinster"}
     {:slug "munster", :type :province, :code :IE-M, :name "Munster"}
@@ -11612,7 +11781,8 @@
    :numeric_code 372,
    :name "Ireland"},
   :ES
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "andalucia",
      :type :autonomous-community,
      :code :ES-AN,
@@ -11947,7 +12117,8 @@
    :name "Spain",
    :official_name "Kingdom of Spain"},
   :ZA
-  {:regions
+  {:currency :ZAR,
+   :regions
    [{:slug "eastern-cape",
      :type :province,
      :code :ZA-EC,
@@ -11985,7 +12156,8 @@
    :name "South Africa",
    :official_name "Republic of South Africa"},
   :MZ
-  {:regions
+  {:currency :MZN,
+   :regions
    [{:slug "maputo-city",
      :type :city,
      :code :MZ-MPM,
@@ -12016,7 +12188,8 @@
    :name "Mozambique",
    :official_name "Republic of Mozambique"},
   :CG
-  {:regions
+  {:currency :XAF,
+   :regions
    [{:slug "bouenza", :type :region, :code :CG-11, :name "Bouenza"}
     {:slug "cuvette", :type :region, :code :CG-8, :name "Cuvette"}
     {:slug "cuvette-ouest",
@@ -12041,7 +12214,8 @@
    :name "Congo",
    :official_name "Republic of the Congo"},
   :AT
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "burgenland", :type :state, :code :AT-1, :name "Burgenland"}
     {:slug "kaernten", :type :state, :code :AT-2, :name "Kärnten"}
     {:slug "niederoesterreich",
@@ -12064,14 +12238,16 @@
    :name "Austria",
    :official_name "Republic of Austria"},
   :AS
-  {:regions nil,
+  {:currency :USD,
+   :regions nil,
    :slug "american-samoa",
    :alpha_2_code :AS,
    :alpha_3_code :ASM,
    :numeric_code 16,
    :name "American Samoa"},
   :PW
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "aimeliik", :type :state, :code :PW-002, :name "Aimeliik"}
     {:slug "airai", :type :state, :code :PW-004, :name "Airai"}
     {:slug "angaur", :type :state, :code :PW-010, :name "Angaur"}
@@ -12101,7 +12277,8 @@
    :name "Palau",
    :official_name "Republic of Palau"},
   :SL
-  {:regions
+  {:currency :SLL,
+   :regions
    [{:slug "western-area-freetown",
      :type :area,
      :code :SL-W,
@@ -12119,7 +12296,8 @@
    :name "Sierra Leone",
    :official_name "Republic of Sierra Leone"},
   :TW
-  {:regions
+  {:currency :TWD,
+   :regions
    [{:slug "changhua",
      :type :district,
      :code :TW-CHA,
@@ -12184,7 +12362,8 @@
    :name "Taiwan, Province of China",
    :official_name "Taiwan, Province of China"},
   :BH
-  {:regions
+  {:currency :BHD,
+   :regions
    [{:slug "al-manamah-al-asimah",
      :type :governorate,
      :code :BH-13,
@@ -12212,7 +12391,8 @@
    :name "Bahrain",
    :official_name "Kingdom of Bahrain"},
   :SD
-  {:regions
+  {:currency :SDG,
+   :regions
    [{:slug "al-bahr-al-ahmar",
      :type :state,
      :code :SD-RS,
@@ -12276,7 +12456,8 @@
    :name "Sudan",
    :official_name "Republic of the Sudan"},
   :GE
-  {:regions
+  {:currency :GEL,
+   :regions
    [{:slug "abkhazia",
      :type :autonomous-republic,
      :code :GE-AB,
@@ -12319,7 +12500,8 @@
    :numeric_code 268,
    :name "Georgia"},
   :TJ
-  {:regions
+  {:currency :TJS,
+   :regions
    [{:slug "gorno-badakhshan",
      :type :autonomous-region,
      :code :TJ-GB,
@@ -12333,7 +12515,8 @@
    :name "Tajikistan",
    :official_name "Republic of Tajikistan"},
   :RW
-  {:regions
+  {:currency :RWF,
+   :regions
    [{:slug "ville-de-kigali",
      :type :town-council,
      :code :RW-01,
@@ -12349,7 +12532,8 @@
    :name "Rwanda",
    :official_name "Rwandese Republic"},
   :TN
-  {:regions
+  {:currency :TND,
+   :regions
    [{:slug "ariana", :type :governorate, :code :TN-12, :name "Ariana"}
     {:slug "beja", :type :governorate, :code :TN-31, :name "Béja"}
     {:slug "ben-arous",
@@ -12417,7 +12601,8 @@
    :name "Tunisia",
    :official_name "Republic of Tunisia"},
   :AG
-  {:regions
+  {:currency :XCD,
+   :regions
    [{:slug "saint-george",
      :type :parish,
      :code :AG-03,
@@ -12453,7 +12638,8 @@
    :numeric_code 28,
    :name "Antigua and Barbuda"},
   :BG
-  {:regions
+  {:currency :BGN,
+   :regions
    [{:slug "blagoevgrad",
      :type :region,
      :code :BG-01,
@@ -12510,7 +12696,8 @@
    :name "Bulgaria",
    :official_name "Republic of Bulgaria"},
   :NO
-  {:regions
+  {:currency :NOK,
+   :regions
    [{:slug "akershus", :type :county, :code :NO-02, :name "Akershus"}
     {:slug "aust-agder",
      :type :county,
@@ -12563,14 +12750,16 @@
    :name "Norway",
    :official_name "Kingdom of Norway"},
   :TC
-  {:regions nil,
+  {:currency :USD,
+   :regions nil,
    :slug "turks-and-caicos-islands",
    :alpha_2_code :TC,
    :alpha_3_code :TCA,
    :numeric_code 796,
    :name "Turks and Caicos Islands"},
   :GH
-  {:regions
+  {:currency :GHS,
+   :regions
    [{:slug "ashanti", :type :region, :code :GH-AH, :name "Ashanti"}
     {:slug "brong-ahafo",
      :type :region,
@@ -12600,7 +12789,8 @@
    :name "Ghana",
    :official_name "Republic of Ghana"},
   :PK
-  {:regions
+  {:currency :PKR,
+   :regions
    [{:slug "islamabad",
      :type :capital-territory,
      :code :PK-IS,
@@ -12634,7 +12824,8 @@
    :name "Pakistan",
    :official_name "Islamic Republic of Pakistan"},
   :GR
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "anatoliki-makedonia-kai-thraki",
      :type :administrative-region,
      :code :GR-A,
@@ -12953,14 +13144,16 @@
    :name "Greece",
    :official_name "Hellenic Republic"},
   :IM
-  {:regions [],
+  {:currency :GBP,
+   :regions [],
    :slug "isle-of-man",
    :alpha_2_code :IM,
    :alpha_3_code :IMN,
    :numeric_code 833,
    :name "Isle of Man"},
   :AZ
-  {:regions
+  {:currency :AZN,
+   :regions
    [{:slug "naxcivan",
      :type :autonomous-republic,
      :code :AZ-NX,
@@ -13141,7 +13334,8 @@
    :name "Azerbaijan",
    :official_name "Republic of Azerbaijan"},
   :MP
-  {:regions nil,
+  {:currency :USD,
+   :regions nil,
    :slug "northern-mariana-islands",
    :alpha_2_code :MP,
    :alpha_3_code :MNP,
@@ -13149,14 +13343,16 @@
    :name "Northern Mariana Islands",
    :official_name "Commonwealth of the Northern Mariana Islands"},
   :TK
-  {:regions nil,
+  {:currency :NZD,
+   :regions nil,
    :slug "tokelau",
    :alpha_2_code :TK,
    :alpha_3_code :TKL,
    :numeric_code 772,
    :name "Tokelau"},
   :YE
-  {:regions
+  {:currency :YER,
+   :regions
    [{:slug "abyan", :type :governorate, :code :YE-AB, :name "Abyān"}
     {:slug "adan", :type :governorate, :code :YE-AD, :name "'Adan"}
     {:slug "ad-dali",
@@ -13208,7 +13404,8 @@
    :name "Yemen",
    :official_name "Republic of Yemen"},
   :MR
-  {:regions
+  {:currency :MRO,
+   :regions
    [{:slug "nouakchott",
      :type :district,
      :code :MR-NKC,
@@ -13244,7 +13441,8 @@
    :name "Mauritania",
    :official_name "Islamic Republic of Mauritania"},
   :AO
-  {:regions
+  {:currency :AOA,
+   :regions
    [{:slug "bengo", :type :province, :code :AO-BGO, :name "Bengo"}
     {:slug "benguela",
      :type :province,
@@ -13288,7 +13486,8 @@
    :name "Angola",
    :official_name "Republic of Angola"},
   :SY
-  {:regions
+  {:currency :SYP,
+   :regions
    [{:slug "al-hasakah",
      :type :governorate,
      :code :SY-HA,
@@ -13336,14 +13535,16 @@
    :numeric_code 760,
    :name "Syrian Arab Republic"},
   :AX
-  {:regions nil,
+  {:currency :EUR,
+   :regions nil,
    :slug "aaland-islands",
    :alpha_2_code :AX,
    :alpha_3_code :ALA,
    :numeric_code 248,
    :name "Åland Islands"},
   :MY
-  {:regions
+  {:currency :MYR,
+   :regions
    [{:slug "wilayah-persekutuan-kuala-lumpur",
      :type :federal-territories,
      :code :MY-14,
@@ -13384,7 +13585,8 @@
    :numeric_code 458,
    :name "Malaysia"},
   :FR
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "alsace",
      :type :metropolitan-region,
      :code :FR-A,
@@ -14012,14 +14214,16 @@
    :name "France",
    :official_name "French Republic"},
   :MQ
-  {:regions nil,
+  {:currency :EUR,
+   :regions nil,
    :slug "martinique",
    :alpha_2_code :MQ,
    :alpha_3_code :MTQ,
    :numeric_code 474,
    :name "Martinique"},
   :TT
-  {:regions
+  {:currency :TTD,
+   :regions
    [{:slug "couva-tabaquite-talparo",
      :type :region,
      :code :TT-CTT,
@@ -14085,7 +14289,8 @@
    :name "Trinidad and Tobago",
    :official_name "Republic of Trinidad and Tobago"},
   :ML
-  {:regions
+  {:currency :XOF,
+   :regions
    [{:slug "bamako", :type :district, :code :ML-BK0, :name "Bamako"}
     {:slug "gao", :type :region, :code :ML-7, :name "Gao"}
     {:slug "kayes", :type :region, :code :ML-1, :name "Kayes"}
@@ -14105,7 +14310,8 @@
    :name "Mali",
    :official_name "Republic of Mali"},
   :NP
-  {:regions
+  {:currency :NPR,
+   :regions
    [{:slug "madhyamanchal",
      :type :development-region,
      :code :NP-1,
@@ -14203,7 +14409,8 @@
    :name "Nepal",
    :official_name "Federal Democratic Republic of Nepal"},
   :BD
-  {:regions
+  {:currency :BDT,
+   :regions
    [{:slug "barisal", :type :division, :code :BD-A, :name "Barisal"}
     {:slug "chittagong",
      :type :division,
@@ -14541,7 +14748,8 @@
    :name "Bangladesh",
    :official_name "People's Republic of Bangladesh"},
   :PL
-  {:regions
+  {:currency :PLN,
+   :regions
    [{:slug "dolnoslaskie",
      :type :province,
      :code :PL-DS,
@@ -14601,7 +14809,8 @@
    :name "Poland",
    :official_name "Republic of Poland"},
   :FI
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "ahvenanmaan-maakunta",
      :type :region,
      :code :FI-01,
@@ -14667,7 +14876,8 @@
    :name "Finland",
    :official_name "Republic of Finland"},
   :MT
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "attard",
      :type :local-council,
      :code :MT-01,
@@ -14887,7 +15097,8 @@
    :name "Malta",
    :official_name "Republic of Malta"},
   :BY
-  {:regions
+  {:currency :BYR,
+   :regions
    [{:slug "horad-minsk",
      :type :city,
      :code :BY-HM,
@@ -14923,7 +15134,8 @@
    :name "Belarus",
    :official_name "Republic of Belarus"},
   :CH
-  {:regions
+  {:currency :CHF,
+   :regions
    [{:slug "aargau", :type :canton, :code :CH-AG, :name "Aargau"}
     {:slug "appenzell-innerrhoden",
      :type :canton,
@@ -14978,7 +15190,8 @@
    :name "Switzerland",
    :official_name "Swiss Confederation"},
   :VI
-  {:regions nil,
+  {:currency :USD,
+   :regions nil,
    :slug "virgin-islands-u-dot-s",
    :alpha_2_code :VI,
    :alpha_3_code :VIR,
@@ -14986,7 +15199,8 @@
    :name "Virgin Islands, U.S.",
    :official_name "Virgin Islands of the United States"},
   :FM
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "chuuk", :type :state, :code :FM-TRK, :name "Chuuk"}
     {:slug "kosrae", :type :state, :code :FM-KSA, :name "Kosrae"}
     {:slug "pohnpei", :type :state, :code :FM-PNI, :name "Pohnpei"}
@@ -14998,7 +15212,8 @@
    :name "Micronesia, Federated States of",
    :official_name "Federated States of Micronesia"},
   :EG
-  {:regions
+  {:currency :EGP,
+   :regions
    [{:slug "ad-daqahliyah",
      :type :governorate,
      :code :EG-DK,
@@ -15097,7 +15312,8 @@
    :name "Egypt",
    :official_name "Arab Republic of Egypt"},
   :ET
-  {:regions
+  {:currency :ETB,
+   :regions
    [{:slug "adis-abeba",
      :type :administration,
      :code :ET-AA,
@@ -15134,7 +15350,8 @@
    :name "Ethiopia",
    :official_name "Federal Democratic Republic of Ethiopia"},
   :SB
-  {:regions
+  {:currency :SBD,
+   :regions
    [{:slug "capital-territory-honiara",
      :type :capital-territory,
      :code :SB-CT,
@@ -15160,7 +15377,8 @@
    :numeric_code 90,
    :name "Solomon Islands"},
   :MW
-  {:regions
+  {:currency :MWK,
+   :regions
    [{:slug "central-region",
      :type :region,
      :code :MW-C,
@@ -15320,7 +15538,8 @@
    :name "Malawi",
    :official_name "Republic of Malawi"},
   :NE
-  {:regions
+  {:currency :XOF,
+   :regions
    [{:slug "niamey",
      :type :capital-district,
      :code :NE-8,
@@ -15342,7 +15561,8 @@
    :name "Niger",
    :official_name "Republic of the Niger"},
   :MM
-  {:regions
+  {:currency :MMK,
+   :regions
    [{:slug "ayeyarwady",
      :type :division,
      :code :MM-07,
@@ -15370,7 +15590,8 @@
    :name "Myanmar",
    :official_name "Republic of Myanmar"},
   :DZ
-  {:regions
+  {:currency :DZD,
+   :regions
    [{:slug "adrar", :type :province, :code :DZ-01, :name "Adrar"}
     {:slug "ain-defla",
      :type :province,
@@ -15468,7 +15689,8 @@
    :name "Algeria",
    :official_name "People's Democratic Republic of Algeria"},
   :CZ
-  {:regions
+  {:currency :CZK,
+   :regions
    [{:slug "jihocesky-kraj",
      :type :region,
      :code :CZ-JC,
@@ -15983,7 +16205,8 @@
    :numeric_code 203,
    :name "Czech Republic"},
   :BS
-  {:regions
+  {:currency :BSD,
+   :regions
    [{:slug "acklins", :type :district, :code :BS-AK, :name "Acklins"}
     {:slug "berry-islands",
      :type :district,
@@ -16100,7 +16323,8 @@
    :name "Bahamas",
    :official_name "Commonwealth of the Bahamas"},
   :MH
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "ralik-chain",
      :type :chains-of-islands,
      :code :MH-L,
@@ -16236,7 +16460,8 @@
    :name "Marshall Islands",
    :official_name "Republic of the Marshall Islands"},
   :KZ
-  {:regions
+  {:currency :KZT,
+   :regions
    [{:slug "almaty", :type :city, :code :KZ-ALA, :name "Almaty"}
     {:slug "astana", :type :city, :code :KZ-AST, :name "Astana"}
     {:slug "almaty-oblysy",
@@ -16302,7 +16527,8 @@
    :name "Kazakhstan",
    :official_name "Republic of Kazakhstan"},
   :KR
-  {:regions
+  {:currency :KRW,
+   :regions
    [{:slug "seoul-teugbyeolsi",
      :type :capital-metropolitan-city,
      :code :KR-11,
@@ -16370,7 +16596,8 @@
    :numeric_code 410,
    :name "Korea, Republic of"},
   :HU
-  {:regions
+  {:currency :HUF,
+   :regions
    [{:slug "bacs-kiskun",
      :type :county,
      :code :HU-BK,
@@ -16517,7 +16744,8 @@
    :name "Hungary",
    :official_name "Hungary"},
   :KG
-  {:regions
+  {:currency :KGS,
+   :regions
    [{:slug "bishkek", :type :city, :code :KG-GB, :name "Bishkek"}
     {:slug "batken", :type :region, :code :KG-B, :name "Batken"}
     {:slug "chue", :type :region, :code :KG-C, :name "Chü"}
@@ -16536,7 +16764,8 @@
    :name "Kyrgyzstan",
    :official_name "Kyrgyz Republic"},
   :GY
-  {:regions
+  {:currency :GYD,
+   :regions
    [{:slug "barima-waini",
      :type :region,
      :code :GY-BA,
@@ -16584,7 +16813,8 @@
    :name "Guyana",
    :official_name "Republic of Guyana"},
   :PA
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "bocas-del-toro",
      :type :province,
      :code :PA-1,
@@ -16619,14 +16849,16 @@
    :name "Panama",
    :official_name "Republic of Panama"},
   :BV
-  {:regions nil,
+  {:currency :NOK,
+   :regions nil,
    :slug "bouvet-island",
    :alpha_2_code :BV,
    :alpha_3_code :BVT,
    :numeric_code 74,
    :name "Bouvet Island"},
   :PH
-  {:regions
+  {:currency :PHP,
+   :regions
    [{:slug "autonomous-region-in-muslim-mindanao-armm",
      :type :region,
      :code :PH-14,
@@ -17102,7 +17334,8 @@
    :name "Philippines",
    :official_name "Republic of the Philippines"},
   :CW
-  {:regions nil,
+  {:currency :ANG,
+   :regions nil,
    :slug "curacao",
    :alpha_2_code :CW,
    :alpha_3_code :CUW,
@@ -17110,7 +17343,8 @@
    :name "Curaçao",
    :official_name "Curaçao"},
   :PG
-  {:regions
+  {:currency :PGK,
+   :regions
    [{:slug "national-capital-district-port-moresby",
      :type :district,
      :code :PG-NCD,
@@ -17171,14 +17405,16 @@
    :name "Papua New Guinea",
    :official_name "Independent State of Papua New Guinea"},
   :MS
-  {:regions nil,
+  {:currency :XCD,
+   :regions nil,
    :slug "montserrat",
    :alpha_2_code :MS,
    :alpha_3_code :MSR,
    :numeric_code 500,
    :name "Montserrat"},
   :NA
-  {:regions
+  {:currency :ZAR,
+   :regions
    [{:slug "caprivi", :type :region, :code :NA-CA, :name "Caprivi"}
     {:slug "erongo", :type :region, :code :NA-ER, :name "Erongo"}
     {:slug "hardap", :type :region, :code :NA-HA, :name "Hardap"}
@@ -17202,7 +17438,8 @@
    :name "Namibia",
    :official_name "Republic of Namibia"},
   :UM
-  {:regions
+  {:currency :USD,
+   :regions
    [{:slug "baker-island",
      :type :territory,
      :code :UM-81,
@@ -17245,14 +17482,16 @@
    :numeric_code 581,
    :name "United States Minor Outlying Islands"},
   :SJ
-  {:regions nil,
+  {:currency :NOK,
+   :regions nil,
    :slug "svalbard-and-jan-mayen",
    :alpha_2_code :SJ,
    :alpha_3_code :SJM,
    :numeric_code 744,
    :name "Svalbard and Jan Mayen"},
   :UA
-  {:regions
+  {:currency :UAH,
+   :regions
    [{:slug "cherkaska-oblast",
      :type :province,
      :code :UA-71,
@@ -17367,7 +17606,8 @@
    :numeric_code 804,
    :name "Ukraine"},
   :AM
-  {:regions
+  {:currency :AMD,
+   :regions
    [{:slug "erevan", :type :province, :code :AM-ER, :name "Erevan"}
     {:slug "aragacotn",
      :type :province,
@@ -17395,7 +17635,8 @@
    :name "Armenia",
    :official_name "Republic of Armenia"},
   :DM
-  {:regions
+  {:currency :XCD,
+   :regions
    [{:slug "saint-andrew",
      :type :parish,
      :code :DM-02,
@@ -17443,7 +17684,8 @@
    :name "Dominica",
    :official_name "Commonwealth of Dominica"},
   :GN
-  {:regions
+  {:currency :GNF,
+   :regions
    [{:slug "boke", :type :governorate, :code :GN-B, :name "Boké"}
     {:slug "faranah", :type :governorate, :code :GN-F, :name "Faranah"}
     {:slug "kankan", :type :governorate, :code :GN-K, :name "Kankan"}
@@ -17630,7 +17872,8 @@
    :name "Guinea",
    :official_name "Republic of Guinea"},
   :NU
-  {:regions nil,
+  {:currency :NZD,
+   :regions nil,
    :slug "niue",
    :alpha_2_code :NU,
    :alpha_3_code :NIU,
@@ -17638,7 +17881,8 @@
    :name "Niue",
    :official_name "Niue"},
   :NZ
-  {:regions
+  {:currency :NZD,
+   :regions
    [{:slug "north-island",
      :type :island,
      :code :NZ-N,
@@ -17737,7 +17981,8 @@
    :numeric_code 554,
    :name "New Zealand"},
   :DE
-  {:regions
+  {:currency :EUR,
+   :regions
    [{:slug "baden-wuerttemberg",
      :type :state,
      :code :DE-BW,
@@ -17788,7 +18033,8 @@
    :name "Germany",
    :official_name "Federal Republic of Germany"},
   :GA
-  {:regions
+  {:currency :XAF,
+   :regions
    [{:slug "estuaire", :type :province, :code :GA-1, :name "Estuaire"}
     {:slug "haut-ogooue",
      :type :province,
@@ -17823,7 +18069,8 @@
    :name "Gabon",
    :official_name "Gabonese Republic"},
   :TG
-  {:regions
+  {:currency :XOF,
+   :regions
    [{:slug "region-du-centre",
      :type :region,
      :code :TG-C,
@@ -17851,7 +18098,8 @@
    :name "Togo",
    :official_name "Togolese Republic"},
   :LI
-  {:regions
+  {:currency :CHF,
+   :regions
    [{:slug "balzers", :type :commune, :code :LI-01, :name "Balzers"}
     {:slug "eschen", :type :commune, :code :LI-02, :name "Eschen"}
     {:slug "gamprin", :type :commune, :code :LI-03, :name "Gamprin"}
@@ -17876,7 +18124,8 @@
    :name "Liechtenstein",
    :official_name "Principality of Liechtenstein"},
   :CD
-  {:regions
+  {:currency :CDF,
+   :regions
    [{:slug "kinshasa", :type :city, :code :CD-KN, :name "Kinshasa"}
     {:slug "bandundu", :type :province, :code :CD-BN, :name "Bandundu"}
     {:slug "bas-congo",

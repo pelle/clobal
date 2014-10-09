@@ -1,0 +1,6 @@
+[submodule "data/country-codes"]
+	path = data/country-codes
+	url = https://github.com/datasets/country-codes.git
+[submodule "data/iso-codes"]
+	path = data/iso-codes
+	url = https://anonscm.debian.org/git/pkg-isocodes/iso-codes.git

@@ -13,7 +13,7 @@ Right now it's just basic information that I personally need to sketch out a new
 Add the following to your project.clj
 
 ```clojure
-[clobal "0.1.0"]
+[clobal "0.2.0"]
 ```
 
 Use library:
@@ -36,6 +36,7 @@ Use library:
    :slug "tonga",
    :alpha_2_code :TO,
    :alpha_3_code :TON,
+   :currency :TOP,
    :numeric_code 776,
    :name "Tonga",
    :official_name "Kingdom of Tonga"}

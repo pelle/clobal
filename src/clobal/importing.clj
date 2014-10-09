@@ -1,6 +1,8 @@
 (ns clobal.importing
   (:require [clojure.xml :as xml]
             [clojure.zip :as zip]
+            [clojure.data.csv :as csv]
+            [clojure.java.io :as io]
             [slugger.core :as slug]))
 
 
@@ -19,6 +21,19 @@
   (map :attrs xml))
 
 
+(defn blank-is-nil [d]
+  (if (and d (not= d ""))
+    d))
+
+(defn convert-csv [file]
+  (let [rows (with-open [in-file (io/reader file)]
+                (doall
+                  (csv/read-csv in-file)))
+        header (first rows)]
+        (map
+          (fn [row] (into {} (map #(vector % (blank-is-nil %2)) header row))) (rest rows))
+  ))
+
 (defn assoc-regions
   [m c]
   (assoc m (keyword (:code (:attrs c)))
@@ -33,16 +48,27 @@
                     ))
                 (:content c))))))
 
+(defn convert-country-codes
+  "read data from country-code project and create a vector of maps"
+  []
+  (convert-csv "data/country-codes/data/country-codes.csv"))
+
+(defn country-currency
+  "Create a map between alpha 2 letter iso country code and 3 letter iso currency code"
+  []
+  (reduce #(assoc %1 (keyword (%2 "ISO3166-1-Alpha-2")) (if-let [c (%2 "currency_alphabetic_code")]
+                                                                    (keyword c))) (convert-country-codes)))
+
 (defn convert-iso3166-2
-  ([] (convert-iso3166-2 "../iso-codes/iso_3166_2/iso_3166_2.xml"))
+  ([] (convert-iso3166-2 "data/iso-codes/iso_3166_2/iso_3166_2.xml"))
   ([file]
      (reduce assoc-regions {} (convert-xml file))))
 
 (defn convert-iso3166
-  ([] (convert-iso3166 "../iso-codes/iso_3166/iso_3166.xml"))
+  ([] (convert-iso3166 "data/iso-codes/iso_3166/iso_3166.xml"))
   ([file]
      (map #(assoc % :numeric_code (Integer/parseInt (:numeric_code %))
-                    :slug (slug/->slug (:name %))                  
+                    :slug (slug/->slug (:name %))
                     :alpha_2_code (keyword (:alpha_2_code %))
                     :alpha_3_code (keyword (:alpha_3_code %)))
           (remove :date_withdrawn (flat-xml (convert-xml file))))))
@@ -50,8 +76,10 @@
 (defn combine-iso3166
   []
   (let [countries (convert-iso3166)
+        currencies (country-currency)
         regions   (convert-iso3166-2)]
-    (map #(assoc % :regions (regions (:alpha_2_code %))) countries)))
+    (map #(assoc % :regions (regions (:alpha_2_code %))
+                   :currency (currencies (:alpha_2_code %))) countries)))
 
 (defn print-var
   [w name data]
@@ -65,8 +93,8 @@
   (with-open [w (clojure.java.io/writer (str "src/clobal/data/" name ".clj"))]
     (.write w (str "(ns clobal.data." name ")\n\n"))
     (f w name)
-    
-    
+
+
     ))
 
 (defn country-ns
