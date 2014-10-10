@@ -13,7 +13,7 @@ Right now it's just basic information that I personally need to sketch out a new
 Add the following to your project.clj
 
 ```clojure
-[clobal "0.2.0"]
+[clobal "0.2.1"]
 ```
 
 Use library:

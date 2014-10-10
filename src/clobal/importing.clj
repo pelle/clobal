@@ -29,7 +29,7 @@
   (let [rows (with-open [in-file (io/reader file)]
                 (doall
                   (csv/read-csv in-file)))
-        header (first rows)]
+        header (map keyword (first rows))]
         (map
           (fn [row] (into {} (map #(vector % (blank-is-nil %2)) header row))) (rest rows))
   ))
@@ -56,7 +56,7 @@
 (defn country-currency
   "Create a map between alpha 2 letter iso country code and 3 letter iso currency code"
   []
-  (reduce #(assoc %1 (keyword (%2 "ISO3166-1-Alpha-2")) (if-let [c (%2 "currency_alphabetic_code")]
+  (reduce #(assoc %1 (keyword (%2 :ISO3166-1-Alpha-2)) (if-let [c (%2 :currency_alphabetic_code)]
                                                                     (keyword c))) (convert-country-codes)))
 
 (defn convert-iso3166-2
@@ -76,10 +76,8 @@
 (defn combine-iso3166
   []
   (let [countries (convert-iso3166)
-        currencies (country-currency)
-        regions   (convert-iso3166-2)]
-    (map #(assoc % :regions (regions (:alpha_2_code %))
-                   :currency (currencies (:alpha_2_code %))) countries)))
+        currencies (country-currency)]
+    (map #(assoc % :currency (currencies (:alpha_2_code %))) countries)))
 
 (defn print-var
   [w name data]
@@ -104,6 +102,26 @@
                (let [data (combine-iso3166)]
                  ;; (print-var w name (vec data))
                  (print-var w "countries" (reduce #(assoc % (:alpha_2_code %2) %2) {} data))
+                 ;; (print-var w "slug->countries" (group-by :slug data))
+                 ))))
+
+(defn regions-ns
+  []
+  (print->ns "regions"
+             (fn [w name]
+               (let [data (convert-iso3166-2)]
+                 ;; (print-var w name (vec data))
+                 (print-var w "regions" data )
+                 ;; (print-var w "slug->countries" (group-by :slug data))
+                 ))))
+
+(defn currencies-ns
+  []
+  (print->ns "currencies"
+             (fn [w name]
+               (let [data (vec (convert-country-codes))]
+                 ;; (print-var w name (vec data))
+                 (print-var w "currencies" data )
                  ;; (print-var w "slug->countries" (group-by :slug data))
                  ))))
 

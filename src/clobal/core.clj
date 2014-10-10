@@ -1,8 +1,10 @@
 (ns clobal.core
-  (:require clobal.data.countries))
+  (:require clobal.data.countries
+            clobal.data.regions))
 
 
 (def countries clobal.data.countries/countries)
+(def regions clobal.data.regions/regions)
 
 (defn ->iso
   "Converts a string into an uppercase keyword as needed by the data"
@@ -27,10 +29,10 @@
    :alpha_2_code :TO,
    :alpha_3_code :TON,
    :numeric_code 776,
+   :currency :TOP
    :name \"Tonga\",
    :official_name \"Kingdom of Tonga\"}"
   [code]
-  ((->iso code) countries))
-
-(defn regions [code]
-  (:regions (country code)))
+  (let [code (->iso code) ]
+    (assoc (code countries)
+      :regions (regions code))))
