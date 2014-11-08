@@ -51,13 +51,15 @@
 (defn convert-country-codes
   "read data from country-code project and create a vector of maps"
   []
-  (convert-csv "data/country-codes/data/country-codes.csv"))
+  (map #(select-keys % [:currency_alphabetic_code :ISO3166-1-Alpha-2])
+    (convert-csv "data/country-codes/data/country-codes.csv")))
 
 (defn country-currency
   "Create a map between alpha 2 letter iso country code and 3 letter iso currency code"
   []
   (reduce #(assoc %1 (keyword (%2 :ISO3166-1-Alpha-2)) (if-let [c (%2 :currency_alphabetic_code)]
-                                                                    (keyword c))) (convert-country-codes)))
+                                                                    (keyword c)))
+          (convert-country-codes)))
 
 (defn convert-iso3166-2
   ([] (convert-iso3166-2 "data/iso-codes/iso_3166_2/iso_3166_2.xml"))
@@ -67,10 +69,9 @@
 (defn convert-iso3166
   ([] (convert-iso3166 "data/iso-codes/iso_3166/iso_3166.xml"))
   ([file]
-     (map #(assoc % :numeric_code (Integer/parseInt (:numeric_code %))
-                    :slug (slug/->slug (:name %))
-                    :alpha_2_code (keyword (:alpha_2_code %))
-                    :alpha_3_code (keyword (:alpha_3_code %)))
+     (map #(->  (assoc % :alpha_2_code (keyword (:alpha_2_code %))
+                         :alpha_3_code (keyword (:alpha_3_code %)))
+                (dissoc  :official_name :numeric_code))
           (remove :date_withdrawn (flat-xml (convert-xml file))))))
 
 (defn combine-iso3166
