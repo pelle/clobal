@@ -70,7 +70,8 @@
   ([] (convert-iso3166 "data/iso-codes/iso_3166/iso_3166.xml"))
   ([file]
      (map #(->  (assoc % :alpha_2_code (keyword (:alpha_2_code %))
-                         :alpha_3_code (keyword (:alpha_3_code %)))
+                         :alpha_3_code (keyword (:alpha_3_code %))
+                         :slug (slug/->slug (:name %)))
                 (dissoc  :official_name :numeric_code))
           (remove :date_withdrawn (flat-xml (convert-xml file))))))
 
@@ -89,12 +90,9 @@
 
 
 (defn print->ns [name f]
-  (with-open [w (clojure.java.io/writer (str "src/clobal/data/" name ".clj"))]
+  (with-open [w (clojure.java.io/writer (str "src/clobal/data/" name ".cljc"))]
     (.write w (str "(ns clobal.data." name ")\n\n"))
-    (f w name)
-
-
-    ))
+    (f w name)))
 
 (defn country-ns
   []

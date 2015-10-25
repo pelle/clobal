@@ -8,12 +8,14 @@ The goal is to import and convert all the locales in iso-codes and make them ava
 
 Right now it's just basic information that I personally need to sketch out a new project.
 
+New as of v0.3.0 is ClojureScript support.
+
 ## Usage
 
 Add the following to your project.clj
 
 ```clojure
-[clobal "0.2.1"]
+[clobal "0.3.0"]
 ```
 
 Use library:
